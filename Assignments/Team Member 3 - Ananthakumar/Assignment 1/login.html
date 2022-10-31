@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <style>
+      body{
+        background: linear-gradient(45deg, lightgreen, lightblue);
+      }
+
+      form{
+        margin:auto;
+        border: 2px black solid;
+        min-width: 20%;
+        width: 30em;
+        padding: 3%;
+        max-width: 30%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3em;
+        background-color: lightblue;
+        border-radius: 1em;
+      }
+
+      form input{
+        padding: 12px;
+        width: 80%;
+        margin-left: 5%;
+        margin-top: 5%;
+      }
+
+      span{
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .submit{
+        display: block;
+        width: 100px;
+        text-align: center;
+      }
+    </style>
+</head>
+<body>
+
+<form action="{{ url_for("login")}}" method="post">
+  <span>Username:</span><br>
+  <input type="text" name='username' placeholder="Username"><br>
+  <span>Email:</span><br>
+  <input  type= 'email' name='email' placeholder="Email"><br><br>
+  <span>Phone no:</span><br>
+  <input  type= 'number' name='no' placeholder="Phone no"><br><br>
+  <input type="submit" value="Register" class="submit">
+</form>
+<h1 >{{info}}</h1>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
